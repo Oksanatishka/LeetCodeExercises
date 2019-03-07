@@ -1,6 +1,14 @@
 Solved:
 
 March 2019
-
-
+1, 
+----------------------------------------
 Done with help:
+
+----------------------------------------
+To run Java file:
+javac Solution.java
+java Solution
+
+To run Javascipt code:
+node solution.js
