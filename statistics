@@ -22,5 +22,5 @@ Methods to remove elements from JavaScript arrays:
     pop() - Removes from the End of an Array
     shift() - Removes from the beginning of an Array
     splice(indexOfLocationInArr, numberOfElemToRemove) - removes from a specific Array index
-    filter - allows you to programatically remove elements from an Array, filter() does not mutate the array on which it is called, but returns a new array.
+    filter - allows you to programatically remove elements from an Array, filter() does not mutate the array on which it is called, but returns a new array. filter() has a single parameter, a callback method.
     
