@@ -1,6 +1,18 @@
 Solved:
 
 March 2019
-
-
+1, 
+----------------------------------------
 Done with help:
+
+----------------------------------------
+To compile & run Java file:
+javac Solution.java
+java Solution
+
+To run Javascipt code:
+node solution.js
+
+To compile & run c++ file:
+gcc solution.cpp
+./a.out
