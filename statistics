@@ -2,7 +2,7 @@ Solved:
 
 March 2019
 Mar 6: 1, 26
-Mar 7: 27
+Mar 7: 27, 35
 ----------------------------------------
 Done with help:
 
@@ -24,4 +24,11 @@ Methods to remove elements from JavaScript arrays:
     shift() - Removes from the beginning of an Array
     splice(indexOfLocationInArr, numberOfElemToRemove) - removes from a specific Array index
     filter - allows you to programatically remove elements from an Array, filter() does not mutate the array on which it is called, but returns a new array. filter() has a single parameter, a callback method.
+    
+Methods to add elements to JavaScript arrays:
+    push() - add one or more elements to the end of an array.
+    concat() - adds elements to an array. Unlike the push method, it does not modify the existing array, but instead returns a new array.
+    unshift() - add elements to the beginning of an array.
+    splice(location, numberOfElemToDelete, ElemToAdd) - adding and/or removing elements from an array, numberOfElemToDelete = 0
+
     
