@@ -9,7 +9,6 @@ Done with help:
 To compile & run Java file:
 javac Solution.java
 java Solution
-<<<<<<< HEAD
 
 To run Javascipt code:
 node solution.js
@@ -17,13 +16,3 @@ node solution.js
 To compile & run c++ file:
 gcc solution.cpp
 ./a.out
-=======
-
-To run Javascipt code:
-node solution.js
-
-To compile & run c++ file:
-gcc solution.cpp
-./a.out
-
->>>>>>> 3dd19f36290748b48b707d7747f53d7c7fe40919
