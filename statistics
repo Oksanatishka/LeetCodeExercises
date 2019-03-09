@@ -3,6 +3,7 @@ Solved:
 March 2019
 Mar 6: 1, 26
 Mar 7: 27, 35, 53
+Mar 8: 66, 88, 
 ----------------------------------------
 Done with help:
 
@@ -18,7 +19,7 @@ To compile & run c++ file:
 gcc solution.cpp
 ./a.out
 
-
+======================================= 1. Arrays ======================================= 
 Methods to remove elements from JavaScript arrays:
     pop() - Removes from the End of an Array
     shift() - Removes from the beginning of an Array
@@ -27,8 +28,13 @@ Methods to remove elements from JavaScript arrays:
     
 Methods to add elements to JavaScript arrays:
     push() - add one or more elements to the end of an array.
-    concat() - adds elements to an array. Unlike the push method, it does not modify the existing array, but instead returns a new array.
     unshift() - add elements to the beginning of an array.
+    concat() - adds elements to an array. Unlike the push method, it does not modify the existing array, but instead returns a new array.
     splice(location, numberOfElemToDelete, ElemToAdd) - adding and/or removing elements from an array, numberOfElemToDelete = 0
 
-    
+Methods to convert strings to numbers:
+    parseInt(stringToConvert, radix)    - radix is the base number used in mathematical systems. For our use, it should always be 10.
+    parseFloat(stringToConvert)
+    Number()    - Sometimes it’s an integer. Other times it’s a point number. (depends on parameter)
+
+=======================================  ======================================= 
