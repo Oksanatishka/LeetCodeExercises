@@ -3,16 +3,14 @@ Solved:
 March 2019
 Mar 6: 1, 26
 Mar 7: 27, 35, 53
-Mar 8: (66), 88
-Mar 11: 121
+Mar 8: 66, 88
+Mar 11: 118, 121,
 ----------------------------------------
-Not finished:
+Solved with a solution:
 118
 
 Not all cases are handled:
 66
-----------------------------------------
-Done with help:
 
 ----------------------------------------
 To compile & run Java file:
