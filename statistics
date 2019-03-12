@@ -4,7 +4,8 @@ March 2019
 Mar 6: 1, 26
 Mar 7: 27, 35, 53
 Mar 8: 66, 88
-Mar 11: 118, 121, 119,122,167
+Mar 11: 118, 121, 119,122,167, 169, 189, 217,219,
+
 ----------------------------------------
 Solved with a solution:
 118,122
@@ -12,6 +13,8 @@ Solved with a solution:
 Not all cases are handled:
 66
 
+Not Solved:
+189
 ----------------------------------------
 To compile & run Java file:
 javac Solution.java
@@ -31,6 +34,7 @@ In some cases the term "vector" is used in computing to refer to an array, altho
 Tables are often implemented in the form of arrays, especially lookup tables; the word table is sometimes used as a synonym of array.
 Arrays are useful mostly because the element indices can be computed at run time. 
 Array types are often implemented by array structures; however, in some languages they may be implemented by hash tables, linked lists, search trees, or other data structures.
+
 
 JAVA Methods
     Integer.parseInt()    - convert string to integer
@@ -65,4 +69,8 @@ For more information, check Sorting Algorithms https://www.geeksforgeeks.org/sor
 2) Insertion sort
 3) Selection sort
 ....
+
+
+Pascal's triangle   -   each number is the sum of the two numbers directly above it.
+
 =======================================  ======================================= 
