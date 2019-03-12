@@ -5,14 +5,14 @@ Mar 6: 1, 26
 Mar 7: 27, 35, 53
 Mar 8: 66, 88
 Mar 11: 118, 121, 119,122,167, 169, 189, 217,219, 268
-Mar 12: 
+Mar 12: 283,
 
 ----------------------------------------
 Solved with a solution:
 118,122
 
 Not all cases are handled:
-66
+66, 
 
 Not Solved:
 189
