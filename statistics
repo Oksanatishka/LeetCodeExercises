@@ -5,7 +5,7 @@ Mar 6: 1, 26
 Mar 7: 27, 35, 53
 Mar 8: 66, 88
 Mar 11: 118, 121, 119, 122, 167, 169, 189, 217, 219, 268
-Mar 12: 283, 414, 448, 485,
+Mar 12: 283, 414, 448, 485, 509
 
 ----------------------------------------
 Solved with a solution:
@@ -72,6 +72,9 @@ For more information, check Sorting Algorithms https://www.geeksforgeeks.org/sor
 ....
 
 
-Pascal's triangle   -   each number is the sum of the two numbers directly above it.
-
+*** Pascal's triangle   -   each number is the sum of the two numbers directly above it.
+*** The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, 
+    such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
+    F(0) = 0,   F(1) = 1
+    F(N) = F(N - 1) + F(N - 2), for N > 1.
 =======================================  ======================================= 
