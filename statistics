@@ -3,19 +3,20 @@ Solved:
 March 2019
 Mar 6: 1, 26
 Mar 7: 27, 35, 53
-Mar 8: 66, 88
-Mar 11: 118, 121, 119, 122, 167, 169, 189, 217, 219, 268
-Mar 12: 283, 414, 448, 485, 509, 532, 561
+Mar 8: (66), 88
+Mar 11: 118, 121, 119, 122, 167, 169, (189), 217, 219, 268
+Mar 12: 283, 414, 448, 485, 509, 532, 561, (566), (581)
+Mar 13: 605, 628
 
 ----------------------------------------
 Solved with a solution:
 118,122
 
 Not all cases are handled:
-66, 
+66, 628
 
 Not Solved:
-189
+189, 566, 581
 ----------------------------------------
 To compile & run Java file:
 javac Solution.java
@@ -70,6 +71,20 @@ For more information, check Sorting Algorithms https://www.geeksforgeeks.org/sor
 2) Insertion sort
 3) Selection sort
 ....
+
+
+JavaScript Multidimensional Array
+var activities = [['work',9],[],[]]
+activities[0][1]    // output: 9    To access an element of the multidimensional array
+activities.push(['Study',2]);       Adding an element to the JavaScript multidimensional array
+
+// Iterating a JavaScript multidimensional array
+for (var i = 0; i < activities.length; i++) {
+    var innerArrayLength = activities[i].length;
+    for (var j = 0; j < innerArrayLength; j++) {
+        console.log('[' + i + ',' + j + '] = ' + activities[i][j]);
+    }
+}
 
 
 *** Pascal's triangle   -   each number is the sum of the two numbers directly above it.
