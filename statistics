@@ -6,7 +6,7 @@ Mar 7: 27, 35, 53
 Mar 8: (66), 88
 Mar 11: 118, 121, 119, 122, 167, 169, (189), 217, 219, 268
 Mar 12: 283, 414, 448, 485, 509, 532, 561, (566), (581)
-Mar 13: 605, 628, 643, (661), 665, 674, 697, 717, 
+Mar 13: 605, 628, 643, (661), 665, 674, 697, 717, 724,
 
 ----------------------------------------
 Solved with a solution:
@@ -95,6 +95,7 @@ for (var i = 0; i < activities.length; i++) {
 *** K-diff pair is an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.
     // Removing duplicate sub-arrays
     // https://stackoverflow.com/questions/47255382/removing-duplicate-sub-arrays
-
+*** Pivot index is the index where the sum of the numbers to the left of the index is equal to 
+    the sum of the numbers to the right of the index.
 
 =======================================  ======================================= 
