@@ -9,6 +9,7 @@ Mar 8: (66), 88
 Mar 11: 118, 121, 119, 122, 167, 169, (189), 217, 219, 268
 Mar 12: 283, 414, 448, 485, 509, 532, 561, (566), (581)
 Mar 13: 605, 628, 643, (661), 665, 674, 697, 717, 724, 747, 830
+Mar 14: 
 
 ----------------------------------------
 Solved with a solution:
@@ -18,7 +19,8 @@ Not all cases are handled:
 66, 628, 665, 697
 
 Not Solved:
-189, 566, 581, 661, 746, 766
+189, 566, 581, 661, 746, 766, 832
+
 ----------------------------------------
 To compile & run Java file:
 javac Solution.java
@@ -100,6 +102,29 @@ for (var i = 0; i < activities.length; i++) {
 *** Pivot index is the index where the sum of the numbers to the left of the index is equal to 
     the sum of the numbers to the right of the index.
 *** A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same element.
+
+
+Solution Approaches:
+1_ Brute Force
+Полный перебор (или метод «грубой силы», англ. brute force) — поиск решения исчерпыванием всевозможных вариантов.
+Loop through each element x
+
+2_ Two-pass Hash Table
+Hash tables have a O(1) complexity (meaning they’re superfast). The more collisions you generate, the more the complexity tends toward O(n).
+hash table (otherwise known as dictionary(in Python), associative array(in PHP), hashmap, map(in JavaScript), and…the list goes on).
+Хеш-табли́ца — это структура данных, реализующая интерфейс ассоциативного массива, а именно, она позволяет 
+хранить пары (ключ, значение) и выполнять три операции: операцию добавления новой пары, операцию поиска и 
+операцию удаления пары по ключу.
+Выполнение операции в хеш-таблице начинается с вычисления хеш-функции от ключа.
+https://sunfishempire.wordpress.com/2014/08/19/5-ways-to-use-a-javascript-hashmap/
+
+
+Time Complexity
+O(1) - одна операция (даже если O(3))
+O(n) - n oпераций
+O(n²) - n*n операций (double loop)
+O(n+m) - если есть два последовательных цикла
+
 
 
 =======================================  ======================================= 
