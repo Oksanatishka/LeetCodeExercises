@@ -137,3 +137,14 @@ Array as a stack
 JS methods: push, pop, peek, length/size.
 
 How to implement stack in JS?
+
+======================================= Set ======================================= 
+Methods:
+in es6: has(), values(), add(), remove(), size()
+not in es6: union(), intersection(), difference(), subset(),
+
+======================================= Queue ======================================= 
+Methods: enqueue, dequeue, front, size, isEmpty
+
+======================================= Binary Search Tree ======================================= 
+
