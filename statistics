@@ -17,7 +17,10 @@ April 2019
 Mar 4: 680, 125, 13, 9,
 ------ Easy: Math ------
 Mar 5: 7, 258, 69
+Mar 8: 231, 326,
+
 ----------------------------------------
+
 Solved with a solution:
 118,122, 189
 
@@ -148,4 +151,16 @@ not in es6: union(), intersection(), difference(), subset(),
 Methods: enqueue, dequeue, front, size, isEmpty
 
 ======================================= Binary Search Tree ======================================= 
+Binary Search Tree: Traversal & Height(min/max)
 
+Traversal:                                
+    inOrder     (Left, Root, Right)     /\
+    preOrder    (Root, Left, Right)             /_
+    postOrder   (Left, Right, Root)     _\ (BFS Breadth First Search))
+    Breadth First or Level Order Traversal
+
+======================================= Hash Tables ======================================= 
+search, add, remove
+
+======================================= Linked List ======================================= 
+======================================= Trie (prefix tree) ======================================= 
