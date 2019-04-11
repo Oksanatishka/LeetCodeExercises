@@ -19,7 +19,7 @@ Apr 4: 680, 125, 13, 9,
 Apr 5: 7, 258, 69
 Apr 8: 231, 326, 263, 970, 976, 942,
 Apr 10: 136,
-Apr 11: 137, 
+Apr 11: 137, 260,
 ----------------------------------------
 
 Solved with a solution:
@@ -193,6 +193,10 @@ Properties:
 - keys (Read-only)      Gets an array of all keys in the hashtable.
 - values (Read-only)    Gets an array of all values in the hashtable.
 - entries (Read-only)   Gets an array of all entries in the hashtable. They're represented in the same form of the method entryAt().
+
+
+The find() method returns the value of the first element in the array that satisfies the provided testing function. 
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 
 
 Resources:
