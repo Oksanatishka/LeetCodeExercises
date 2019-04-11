@@ -14,21 +14,22 @@ Mar 19: 189
 
 April 2019
 ------ Easy: String ------
-Mar 4: 680, 125, 13, 9,
+Apr 4: 680, 125, 13, 9,
 ------ Easy: Math ------
-Mar 5: 7, 258, 69
-Mar 8: 231, 326, 263, 970, 976, 942,
-
+Apr 5: 7, 258, 69
+Apr 8: 231, 326, 263, 970, 976, 942,
+Apr 10: 136,
+Apr 11: 137, 
 ----------------------------------------
 
 Solved with a solution:
 118,122, 189, 976
 
 Not all cases are handled:
-66, 628, 665, 697, 680,
+66, 628, 665, 697, 680, 949
 
 Not Solved:
-566, 581, 661, 746, 766, 832
+566, 581, 661, 746, 766, 832, 202
 
 ----------------------------------------
 To compile & run Java file:
@@ -162,5 +163,72 @@ Traversal:
 ======================================= Hash Tables ======================================= 
 search, add, remove
 
+хеш-таблицы
+Борьба с коллизиями:
+- метод цепочек (Chaining) (открытое хеширование / закрытая адресация) 
+        элементы с одинаковым хешем попадают в одну ячейку в виде связного списка.
+- метод открытой индексации (Open addressing) (закрытое хеширование)
+        хранится не указатель на связный список, а один элемент (ключ, значение).
+        если ячейка с индексом hash(key) занята, то осуществляется поиск свободной ячейки в следующих позициях таблицы
+
+-> Хеш-функция - ф-я преобразующая значение ключа(напр. строки, числа, файла) в целое число.
+-> Hash code / hash sum (контрольная сумма) / hash - значение возвращаемое хеш-функцией.
+-> Perfect hash f-n - хеш-ф-я без коллизий
+
+
+Methods of class Hashtable:
+- get(key)              Returns the value associated to the specified key.
+- put(key,value)        Associates the specified value to the specified key.
+- remove(key)           Removes the specified key with its value.
+- clear()               Clears all the hashtable, removing both the keys and values.
+- indexOfKey(key)       Returns the index of the specified key, based on the adding order.
+- indexOfValue(value)   Returns the index of the specified value, based on the adding order.
+- entryAt(index)        Returns an object with two properties: key and value, representing the entry at the specified index.
+- containsKey(key)      Returns whether the hashtable contains the specified key.
+- containsValue(value)  Returns whether the hashtable contains the specified value.
+- forEach(iterator)     Iterates all entries in the specified iterator.
+
+Properties:
+- length (Read-only)    Gets the count of the entries in the hashtable.
+- keys (Read-only)      Gets an array of all keys in the hashtable.
+- values (Read-only)    Gets an array of all values in the hashtable.
+- entries (Read-only)   Gets an array of all entries in the hashtable. They're represented in the same form of the method entryAt().
+
+
+Resources:
+- презентация https://www.slideshare.net/mkurnosov/6-32402313
+- Hash Tables in Javascript http://www.mojavelinux.com/articles/javascript_hashes.html
+- How to do associative array/hashing in JavaScript https://stackoverflow.com/questions/1208222/how-to-do-associative-array-hashing-in-javascript
+
+
 ======================================= Linked List ======================================= 
 ======================================= Trie (prefix tree) ======================================= 
+
+
+
+==============================================================================
+======================================= Bitwise operators
+==============================================================================
+The decimal, denary or base 10 numbering system is what we use in everyday life for counting.
+In the decimal number system ten numerals are used to represent numbers from zero to nine.
+Binary only uses two numerals 0 and 1.
+
+For a binary number, the most significant bit (MSB) is the digit furthermost to the left of the number and 
+the least significant bit (LSB) is the rightmost digit.
+
+1) convert decimal to binary number
+    Steps to Convert Decimal to Binary (remainder method):
+        This involves dividing the number by 2 recursively until you're left with 0, while taking note of each remainder.
+        - Write down the decimal number.
+        - Divide the number by 2.
+        - Write the result underneath.
+        - Write the remainder on the right hand side. This will be 0 or 1.
+        - Divide the result of the division by 2 and again write down the remainder.
+        - Continue dividing and writing down remainders until the result of the division is 0.
+        - The most significant bit (MSB) is at the bottom of the column of remainders and the least significant bit (LSB) is at the top.
+        - Read the series of 1s and 0s on the right from the bottom up. This is the binary equivalent of the decimal number.
+2) 
+
+Resources:
+- https://owlcation.com/stem/How-to-Convert-Decimal-to-Binary-and-Binary-to-Decimal
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
