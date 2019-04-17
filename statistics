@@ -236,3 +236,25 @@ the least significant bit (LSB) is the rightmost digit.
 Resources:
 - https://owlcation.com/stem/How-to-Convert-Decimal-to-Binary-and-Binary-to-Decimal
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
+
+
+*********************************************************************************************************
+*********************************************************************************************************
+*********************************************************************************************************
+
+Happy number 
+    Starting with any positive integer, replace the number by the sum of the squares of its digits, and 
+    repeat the process until the number either equals 1 (where it will stay), or it loops endlessly in 
+    a cycle that does not include 1.
+    If it is not happy number it will end at '4'. 
+
+Prime number
+    A prime number is a whole number greater than 1, which is only divisible by 1 and itself. 
+    First few prime numbers are : 2 3 5 7 11 13 17 19 23 …..
+    Two is the only even Prime number. Two and Three are only two consecutive natural numbers which are prime too.
+    
+
+Isomorphic strings
+    Two strings are isomorphic if the characters in s can be replaced to get t.
+
+    

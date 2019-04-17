@@ -1,0 +1,41 @@
+{
+    "name": "algorithms",
+    "version": "1.0.0",
+    "description": "",
+    "main": "spiral_order_matrix.js",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "babel-jest": "^23.6.0",
+        "jest": "^23.6.0"
+    },
+    "jest": {
+        "collectCoverageFrom": [],
+        "setupFiles": [],
+        "testMatch": [
+            "<rootDir>/**/__tests__/**/*.{js,jsx,mjs}",
+            "<rootDir>/**/?(*.)(spec|test).{js,jsx,mjs}"
+        ],
+        "testEnvironment": "node",
+        "testURL": "http://localhost",
+        "transform": {
+            "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest"
+        },
+        "transformIgnorePatterns": [
+            "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+        ],
+        "moduleFileExtensions": [
+            "web.js",
+            "mjs",
+            "js",
+            "json",
+            "web.jsx",
+            "jsx",
+            "node"
+        ]
+    }
+}

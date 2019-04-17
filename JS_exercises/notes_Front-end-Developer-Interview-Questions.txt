@@ -1,0 +1,54 @@
+// Questios: https://h5bp.github.io/Front-end-Developer-Interview-Questions/
+// CSS With Answers: https://codeburst.io/clearing-your-front-end-job-interview-css-95bdd82871f2
+--------------------------------------------------------------------------------------------------
+
+1. Coding Questions
+
+1) var foo = 10 + '20';            // Answer: "1020"
+2) console.log(0.1 + 0.2 == 0.3);  // Answer: false, 0.1 + 0.2 = 0.30000000000000004
+3) Question: How would you make this work?
+    add(2, 5); // 7
+    add(2)(5); // 7
+
+    Answer: try this, it will help you in two ways add(2)(3) and add(2,3).
+    function add(a,b){
+        var ddd = function (b){
+            return a+b;
+        };
+        if(typeof b =='undefined'){
+            return ddd;
+        }else{
+            return ddd(b);
+        }
+    }
+
+4) "i'm a lasagna hog".split("").reverse().join("");
+
+Answer: 
+- The split() method splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+e.g. ["i", "'", "m", " ", "a", " ", "l", "a", "s", "a", "g", "n", "a", " ", "h", "o", "g"]
+- The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
+e.g. ["g", "o", "h", " ", "a", "n", "g", "a", "s", "a", "l", " ", "a", " ", "m", "'", "i"]
+- The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string.
+e.g. "goh angasal a m'i"
+
+Final Answer: "goh angasal a m'i"
+
+5) ( window.foo || ( window.foo = "bar" ) );
+Answer: the value of window.foo is "1020"
+
+6) 
+var foo = "Hello";
+(function() {
+  var bar = " World";
+  alert(foo + bar);
+})();
+alert(foo + bar);
+
+7) 
+var foo = [];
+foo.push(1);
+foo.push(2);
+
+Answer: the foo length is 2.
+
