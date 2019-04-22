@@ -23,7 +23,7 @@ Apr 11: 137, 260, 202
 
 ------ Easy: Bit manipulation------ 
 Apr 21: 190, 191, 371
-Apr 22: 342, 
+Apr 22: 342, 389, 
 ----------------------------------------
 
 
@@ -242,7 +242,7 @@ the least significant bit (LSB) is the rightmost digit.
 Resources:
 - https://owlcation.com/stem/How-to-Convert-Decimal-to-Binary-and-Binary-to-Decimal
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
-
+- https://leetcode.com/problems/sum-of-two-integers/discuss/84278/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
 
 *********************************************************************************************************
 *********************************************************************************************************
