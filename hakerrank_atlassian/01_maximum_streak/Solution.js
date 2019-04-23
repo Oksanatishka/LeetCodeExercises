@@ -1,4 +1,4 @@
-// Exercises:
+// Coding Challenges:
 // 01. maximum streak       - double loop
 // 02. city attractions     - graphs
 // 03. work schedule        - backtraking

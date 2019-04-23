@@ -237,7 +237,17 @@ the least significant bit (LSB) is the rightmost digit.
         - Continue dividing and writing down remainders until the result of the division is 0.
         - The most significant bit (MSB) is at the bottom of the column of remainders and the least significant bit (LSB) is at the top.
         - Read the series of 1s and 0s on the right from the bottom up. This is the binary equivalent of the decimal number.
-2) 
+
+2) convert decimal to hexidecimal (https://www.permadi.com/tutorial/numDecToHex/)
+    Steps:
+        - Divide the decimal number by 16.   Treat the division as an integer division.  
+        - Write down the remainder (in hexadecimal).
+        - Divide the result again by 16.  Treat the division as an integer division.  
+        - Repeat step 2 and 3 until result is 0.
+        - The hex value is the digit sequence of the remainders from the last to first.
+
+    hexidecimal     0   1   2   3   4   5   6   7   8   9   A   B   C   D   E   F
+    decimal         0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15
 
 Resources:
 - https://owlcation.com/stem/How-to-Convert-Decimal-to-Binary-and-Binary-to-Decimal
