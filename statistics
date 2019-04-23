@@ -26,7 +26,7 @@ Apr 21: 190, 191, 371
 Apr 22: 342, 389, 
 
 ------ Easy: Hash Table------ 
-Apr 23: 242, 
+Apr 23: 242, 290
 ----------------------------------------
 
 
@@ -292,4 +292,5 @@ Prime number
 Isomorphic strings
     Two strings are isomorphic if the characters in s can be replaced to get t.
 
-    
+*********************************************************************************************************
+JS cheatsheet https://htmlcheatsheet.com/js/
