@@ -24,6 +24,9 @@ Apr 11: 137, 260, 202
 ------ Easy: Bit manipulation------ 
 Apr 21: 190, 191, 371
 Apr 22: 342, 389, 
+
+------ Easy: Hash Table------ 
+Apr 23: 242, 
 ----------------------------------------
 
 
@@ -141,6 +144,22 @@ O(n) - n oпераций
 O(n²) - n*n операций (double loop)
 O(n+m) - если есть два последовательных цикла
 
+
+1) Hash Table   O(n) -- O(1)
+Time complexity is O(n) because accessing the counter table is a constant time operation.
+Although we do use extra space, the space complexity is O(1) because the table's size stays constant no matter how large n is.
+The space required by hash_table is equal to the number of elements in nums. 
+
+2) Bit manipulation O(n) -- O(1)
+Time complexity : O(n). We only iterate through nums, so the time complexity is the number of elements in nums.
+Assuming that XOR is a constant-time operation, this algorithm does constant work on nn iterations, so the runtime is overall linear.
+Space complexity : O(1). This algorithm allocates only constant additional space.
+
+3) Brute Force  O(n^2) -- O(1)
+Time complexity : O(n^2)
+The brute force algorithm contains two nested for loops that each run for n iterations, adding up to quadratic time complexity.
+Space complexity : O(1)
+The brute force solution does not allocate additional space proportional to the input size.
 
 
 ======================================= Stacks ======================================= 
