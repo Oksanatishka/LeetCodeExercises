@@ -29,7 +29,7 @@ Apr 22: 342, 389,
 Apr 23: 242, 290, 1002
 
 ------ Easy: Strings------ 
-Jul 27: 14,
+Jul 27: 14, 20, 
 
 ----------------------------------------
 
@@ -298,3 +298,12 @@ Isomorphic strings
 
 *********************************************************************************************************
 JS cheatsheet https://htmlcheatsheet.com/js/
+Udemy course 
+    https://www.udemy.com/ultimate-javascript-leetcode-interview-bootcamp/
+    https://github.com/kaeducation/LeetCode_JS 
+
+    Install node.js (download from the website) and check version: 
+        node -v
+        sudo npm install -g jest
+        jest -v
+    Install VS Code.    
