@@ -37,7 +37,7 @@ Jul 28: 58, 125, 344, 345, 383, 387,
 
 
 Solved with a solution:
-118,122, 189, 976, 202, 190, 371, 1002
+118,122, 189, 976, 202, 190, 371, 1002, 415, 
 
 Not all cases are handled:
 66, 628, 665, 697, 680, 949
@@ -176,6 +176,10 @@ Methods:
     2) slice()      - extracts a section of a string and returns it as a new string, without modifying the original string.
     3) substring()  - returns the part of the string between the start and end indexes, or to the end of the string.
     4) join()       - creates and returns a new string by concatenating all of the elements in an array, separated by commas or a specified separator string.
+    5) charCodeAt() - (convert a character to its ASCII code using JavaScript) returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+
+
+Math.floor() function returns the largest integer less than or equal to a given number.
 
 ======================================= Stacks ======================================= 
 Array as a stack
