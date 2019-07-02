@@ -11,19 +11,15 @@ var reverseStr = function(s, k) {
     var initialK = k;
     for (let i = 0; i < arr.length; i++) {
         let subArrReversed = arr.slice(i, k).reverse(); // [ 'b', 'a' ]
-
         resultArr.push(subArrReversed); // [ [ 'b', 'a' ] ]
 
         i = i + initialK;
-
         k = k + initialK;
 
         let subArr = arr.slice(i, k);
-        // console.log('subArr ', subArr);
         resultArr.push(subArr);
 
         i = i + initialK - 1;
-
         k = k + initialK;
     }
 
