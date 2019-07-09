@@ -33,11 +33,12 @@ Jun 27: 14, 20, 28, 38,
 Jun 28: 58, 125, 344, 345, 383, 387,
 Jun 30: 434, 443
 Jul 1: 520, 
-Jul 2: 541, 557, 
+Jul 2: 541, 557, 709,
+Jul 8: 804, 
 ----------------------------------------
 
 Solved with a solution:
-118,122, 189, 976, 202, 190, 371, 1002, 415, 
+118,122, 189, 976, 202, 190, 371, 1002, 415, 3, 49,
 
 Not all cases are handled:
 66, 628, 665, 697, 680, 949
@@ -249,6 +250,12 @@ Resources:
 - презентация https://www.slideshare.net/mkurnosov/6-32402313
 - Hash Tables in Javascript http://www.mojavelinux.com/articles/javascript_hashes.html
 - How to do associative array/hashing in JavaScript https://stackoverflow.com/questions/1208222/how-to-do-associative-array-hashing-in-javascript
+
+
+Subarry in hashmap (example)
+    hashMap[s[i]] = hashMap[s[i]] ? { counter: ++hashMap[s[i]].counter, index: i } : { counter: 1, index: i };
+
+Object.values(myObject);    - returns an array of a given object's own enumerable property values
 
 
 ======================================= Linked List ======================================= 
