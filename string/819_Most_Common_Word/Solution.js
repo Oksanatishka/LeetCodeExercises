@@ -16,7 +16,8 @@ var mostCommonWord = function(paragraph, banned) {
     let hashMap = {};
 
     let filteredStrArr = strArr.filter(function(el) {
-        return banned.indexOf(el) < 0;
+        // The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+        return banned.indexOf(el) < 0; // indexOf возвращает -1 если не найдено вхождение елемента
     });
     // console.log('filteredStrArr ', filteredStrArr);
     for (let i = 0; i < filteredStrArr.length; i++) {
