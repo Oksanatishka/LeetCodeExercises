@@ -36,17 +36,12 @@ Jul 1: 520,
 Jul 2: 541, 557, 709,
 Jul 8: 804, 
 Jul 9: 819, 824, 
+Jul 10: 925, 
+Jul 11: 788, 929,
+Jul 17: 459, 521, 551,  
+Jul 19: 859, 937, 
+
 ----------------------------------------
-
-Solved with a solution:
-118,122, 189, 976, 202, 190, 371, 1002, 415, 3, 49,
-
-Not all cases are handled:
-66, 628, 665, 697, 680, 949
-
-Not Solved:
-566, 581, 661, 746, 766, 832
-
 ----------------------------------------
 To compile & run Java file:
 javac Solution.java
@@ -69,6 +64,10 @@ Array types are often implemented by array structures; however, in some language
 
 Methods:
     1) reverse() - reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
+    2) map()     - creates a new array with the results of calling a provided function on every element in the calling array.
+                    .map(x => x * 2);                       // это  es6
+                    .map(function(x) { return x * 2 } );    // это  es5
+
 
 split()     <-->     join()
 
@@ -181,6 +180,8 @@ Methods:
     5) charCodeAt() - (convert a character to its ASCII code using JavaScript) returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
     6) charAt()     - returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.
     7) replace()    - returns a new string with some or all matches of a pattern replaced by a replacement. 
+    8) repeat()     - constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
+    
 
 
 Math.floor() function returns the largest integer less than or equal to a given number.
@@ -340,3 +341,32 @@ Udemy course
         sudo npm install -g jest
         jest -v
     Install VS Code.    
+
+
+*** A closure 
+    is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. 
+    The closure has access to variables in three scopes; specifically: 
+        (1) variable in its own scope, 
+        (2) variables in the enclosing function’s scope, and 
+        (3) global variables.
+
+*** How do you clone an object?
+    var obj = {a: 1 ,b: 2}
+    var objclone = Object.assign({},obj);
+
+*** How do you add an element at the begining of an array? How do you add one at the end?
+    var myArray = ['a', 'b', 'c', 'd'];
+    myArray.push('end');
+    myArray.unshift('start');
+    console.log(myArray); // ["start", "a", "b", "c", "d", "end"]
+    
+    With ES6, one can use the spread operator:
+    myArray = ['start', ...myArray];
+    myArray = [...myArray, 'end'];
+    
+    Or, in short:
+    myArray = ['start', ...myArray, 'end'];    
+
+*** Set DS
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+

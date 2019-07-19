@@ -3,34 +3,69 @@
  * @return {number}
  */
 var uniqueMorseRepresentations = function(words) {
-    let hashMap = {
-        a: '.-',
-        b: '-...',
-        c: '-.-.',
-        d: '-..',
-        e: '.',
-        f: '..-.',
-        g: '--.',
-        h: '....',
-        i: '..',
-        j: '.---',
-        k: '-.-',
-        l: '.-..',
-        m: '--',
-        n: '-.',
-        o: '---',
-        p: '.--.',
-        q: '--.-',
-        r: '.-.',
-        s: '...',
-        t: '-',
-        u: '..-',
-        v: '...-',
-        w: '.--',
-        x: '-..-',
-        y: '-.--',
-        z: '--..'
-    };
+    // let hashMap = {
+    //     a: '.-',
+    //     b: '-...',
+    //     c: '-.-.',
+    //     d: '-..',
+    //     e: '.',
+    //     f: '..-.',
+    //     g: '--.',
+    //     h: '....',
+    //     i: '..',
+    //     j: '.---',
+    //     k: '-.-',
+    //     l: '.-..',
+    //     m: '--',
+    //     n: '-.',
+    //     o: '---',
+    //     p: '.--.',
+    //     q: '--.-',
+    //     r: '.-.',
+    //     s: '...',
+    //     t: '-',
+    //     u: '..-',
+    //     v: '...-',
+    //     w: '.--',
+    //     x: '-..-',
+    //     y: '-.--',
+    //     z: '--..'
+    // };
+    let hashMap = {};
+    let arr = [
+        '.-',
+        '-...',
+        '-.-.',
+        '-..',
+        '.',
+        '..-.',
+        '--.',
+        '....',
+        '..',
+        '.---',
+        '-.-',
+        '.-..',
+        '--',
+        '-.',
+        '---',
+        '.--.',
+        '--.-',
+        '.-.',
+        '...',
+        '-',
+        '..-',
+        '...-',
+        '.--',
+        '-..-',
+        '-.--',
+        '--..'
+    ];
+    let j = 0;
+    for (let i = 'a'; i <= 'z'; i++) {
+        hashMap[i] = arr[j];
+        j++;
+    }
+    console.log('hashMap ', hashMap);
     let wordsMap = {};
     for (let i = 0; i < words.length; i++) {
         let transformedWord = [];
@@ -45,7 +80,7 @@ var uniqueMorseRepresentations = function(words) {
             ? ++wordsMap[finalTransformedWord]
             : 1;
     }
-    console.log('wordsMap ', wordsMap);
+    // console.log('wordsMap ', wordsMap);
     return Object.keys(wordsMap).length;
 };
 
