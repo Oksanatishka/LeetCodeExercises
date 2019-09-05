@@ -25,6 +25,15 @@ var lengthOfLongestSubstring = function(s) {
     return maxLength;
 };
 
-console.log(lengthOfLongestSubstring('abcabcbb')); // 3    "abc"
-console.log(lengthOfLongestSubstring('bbbbb')); // 1    "b"
-console.log(lengthOfLongestSubstring('pwwkew')); // 3    "wke"
+module.exports = lengthOfLongestSubstring;
+
+// console.log(lengthOfLongestSubstring('abcabcbb')); // 3    "abc"
+// console.log(lengthOfLongestSubstring('bbbbb')); // 1    "b"
+// console.log(lengthOfLongestSubstring('pwwkew')); // 3    "wke"
+
+// jest --watch LC100_isSameTree
+// test('my test', () => {
+//     expect(solution('abcabcbb')).toEqual(3);
+//     expect(solution('bbbbb')).toEqual(1);
+//     expect(solution('pwwkew')).toEqual(3);
+// });

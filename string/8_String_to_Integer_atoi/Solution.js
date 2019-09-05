@@ -15,13 +15,15 @@ var myAtoi = function(str) {
     return match ? Math.min(Math.pow(2, 31) - 1, Math.max(-Math.pow(2, 31), match[1])) : 0;
 };
 
-console.log(myAtoi('42')); // 42
-console.log(myAtoi('   -42')); // -42
-console.log(myAtoi('4193 with words')); // 4193
-console.log(myAtoi('words and 987')); //   0
-console.log(myAtoi('-91283472332')); // -2147483648    The number "-91283472332" is out of the range of a 32-bit signed integer.
-console.log(myAtoi('')); // 0
-console.log(myAtoi('-')); // 0
-console.log(myAtoi('+')); // 0
-console.log(myAtoi('3.14159')); // 3
-console.log(myAtoi('.1')); // 0
+// console.log(myAtoi('42')); // 42
+// console.log(myAtoi('   -42')); // -42
+// console.log(myAtoi('4193 with words')); // 4193
+// console.log(myAtoi('words and 987')); //   0
+// console.log(myAtoi('-91283472332')); // -2147483648    The number "-91283472332" is out of the range of a 32-bit signed integer.
+// console.log(myAtoi('')); // 0
+// console.log(myAtoi('-')); // 0
+// console.log(myAtoi('+')); // 0
+// console.log(myAtoi('3.14159')); // 3
+// console.log(myAtoi('.1')); // 0
+
+module.exports = myAtoi;

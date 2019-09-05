@@ -1,0 +1,22 @@
+{
+    "name": "leetcode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "binary-search-tree-implementation-in-js.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Oksanatishka/LeetCodeExercises.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Oksanatishka/LeetCodeExercises/issues"
+    },
+    "homepage": "https://github.com/Oksanatishka/LeetCodeExercises#readme",
+    "devDependencies": {
+        "jest": "^24.8.0"
+    }
+}
