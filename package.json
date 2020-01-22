@@ -18,5 +18,8 @@
     "homepage": "https://github.com/Oksanatishka/LeetCodeExercises#readme",
     "devDependencies": {
         "jest": "^24.8.0"
+    },
+    "dependencies": {
+        "@babel/preset-env": "^7.8.3"
     }
 }
