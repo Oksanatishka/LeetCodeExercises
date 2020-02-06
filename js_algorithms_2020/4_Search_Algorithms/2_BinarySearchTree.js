@@ -22,3 +22,10 @@ class Node {
         return null;
     }
 }
+
+const root = new Node(2);
+root.insert(1);
+root.insert(3);
+root.insert(0);
+// assert.equal(root.search(3).data, 3);
+// assert.equal(root.search(4), null);
