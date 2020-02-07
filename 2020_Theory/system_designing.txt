@@ -1,0 +1,21 @@
+Discussion with in 30~45 minutes
+Step 1: Requirement Gathering (Discuss with interviewer for 2 minutes)
+Step 2: System interface definition (Take a pause for 1 or 2 minute , note down your thoughts and explain what do you have on it in 5 minutes)
+Step 3: Capacity estimation (Write down your big guns, its show time for 10~15 minutes)
+Step 4: Defining the data model(Fire everything for 10~15 minute, Points to cover: Entities, Interaction with each other, Data management like storage, transfer, encryption, etc)
+Step 5: High-level design (Show case your drawing skills in 3~5 minutes and try to wrap it)
+
+> Scalability
+    Scaling a database 
+> Sharding or Data Partitioning
+> Load Balancing
+> Caching
+> Indexes
+> Proxies
+> Queues
+> Redundancy and Replication
+> SQL vs. NoSQL
+> CAP Theorem
+> Consistent Hashing
+> Security
+> Analytics

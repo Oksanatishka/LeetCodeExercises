@@ -1,0 +1,174 @@
+- 500 React Interview Questions & Answers
+    https://github.com/sudheerj/reactjs-interview-questions
+- Frequently asked: React JS Interview Questions and Answers
+    https://medium.com/@vigowebs/frequently-asked-react-js-interview-questions-and-answers-36f3dd99f486
+- A React job interview — recruiter perspective. 
+    https://medium.com/@baphemot/a-react-job-interview-recruiter-perspective-f1096f54dd16
+
+// General React ----------------------------------------------------------
+
+1)  What is React?
+React is a front-end JavaScript library developed by Facebook in 2011.
+- helps in building reusable UI components.
+- Even though it was open-sourced only in 2015, it has one of the largest communities supporting it.
+
+2) What are the features of React? 
+    - uses the virtual DOM instead of the real DOM.
+    - uses server-side rendering.
+
+3) advantages of React.
+    - increases the app's performance
+    - can be used on the client as well as server side
+    - Because of JSX, code’s readability increases
+    - easy to integrate with other frameworks like Meteor, Angular, etc
+    - writing UI test cases become extremely easy
+
+4) What is JSX?
+    JSX is a shorthand for JavaScript XML.
+    JavaScript + HTML syntax
+    Example of JSX:
+        render(){
+            return(        
+                <div>    
+                    <h1> Hello World from Edureka!!</h1>
+                </div>
+            );
+        }
+5) What do you understand by Virtual DOM? Explain its working.
+    A virtual DOM is a lightweight JavaScript object which originally is just the copy of the real DOM.
+
+6) Why can’t browsers read JSX?
+    transform JSX file into a JavaScript object using JSX transformers like Babel and then pass it to the browser.
+
+7) How different is React’s ES6 syntax when compared to ES5?
+                            ES5                                                 ES6
+    require vs import       var React = require('react');                       import React from 'react';
+    export vs exports       module.exports = Component;                         export default Component;
+    component and function  var MyComponent = React.createClass({               class MyComponent extends React.Component {
+                                render: function() {                                render() {
+                                    return                                              ... // the same
+                                        <h3>Hello Edureka!</h3>;            
+                                }
+                            });
+    
+    props                   var App = React.createClass({                       class App extends React.Component {
+                                propTypes: { name: React.PropTypes.string },
+                                render: function() {                                render() {
+                                    return                                          ... // the same
+                                        <h3>Hello {this.props.name}!</h3>;                  
+                                }
+                            });
+    
+    state                   var App = React.createClass({                       class App extends React.Component {
+                                getInitialState: function() {                       constructor() {
+                                    return { name: 'world' };                           super()
+                                },                                                      this.state = { name: 'world' };
+                                                                                    }
+                                render: function() {                                render() 
+                                    return                                              {... // the same
+                                        <h3>Hello {this.state.name}!</h3>;                  
+                                }
+                            });
+
+8) How is React different from Angular?
+    TOPIC	        REACT	                ANGULAR
+1. ARCHITECTURE	    Only the View of MVC	Complete MVC
+2. RENDERING	    Server-side rendering	Client-side rendering
+3. DOM	            Uses virtual DOM	    Uses real DOM
+4. DATA BINDING	    One-way data binding	Two-way data binding
+5. DEBUGGING	    Compile time debugging	Runtime debugging
+6. AUTHOR	        Facebook	            Google
+
+// React Components ----------------------------------------------------------
+9) Explain the purpose of render() in React.
+    Each React component must have a render() mandatorily. It returns a single React element which is the representation of the native DOM component.
+
+10) What is Props?
+    immutable
+
+11) What is a state in React and how is it used?
+    mutable
+
+12) How can you update the state of a component?
+    setTimeout(()=>{this.setState({name:'Jaeha', id:'222'})},2000)
+
+13) Differentiate between stateful and stateless components.
+
+14) What are the different phases of React component’s lifecycle?
+    Initial Rendering Phase:    This is the phase when the component is about to start its life journey and make its way to the DOM.
+    Updating Phase:             Once the component gets added to the DOM, it can potentially update and re-render only when a prop or state change occurs. That happens only in this phase.
+    Unmounting Phase:           This is the final phase of a component’s life cycle in which the component is destroyed and removed from the DOM.
+
+15) Explain the lifecycle methods of React components in detail.
+    componentWillMount() – Executed just before rendering
+    componentDidMount() – Executed on the client side only after the first render.
+    componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and before another render is called.
+    shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your component to update, return true else return false. By default, it returns false.
+    componentWillUpdate() – Called just before rendering takes place in the DOM.
+    componentDidUpdate() – Called immediately after rendering takes place.
+    componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear up the memory spaces.
+
+16) How do you create an event in React?
+    class Display extends React.Component({    
+        show(evt) {
+            // code   
+        },   
+        render() {      
+            // Render the div with an onClick prop (value is a function)        
+            return (                        
+                <div onClick={this.show}>Click Me!</div>
+            );    
+        }
+    });
+
+17) How do you modularize code in React?
+    We can modularize code by using the export and import properties.
+
+18) How are forms created in React?
+    handleSubmit(event) {
+        alert('A name was submitted: ' + this.state.value);
+        event.preventDefault();
+    }
+    
+    render() {
+        return (        
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    Name:
+                    <input type="text" value={this.state.value} onChange={this.handleSubmit} />
+                </label>
+                <input type="submit" value="Submit" />
+            </form>
+        );
+    }
+
+19) What are Higher Order Components(HOC)?
+    HOC is an advanced way of reusing the component logic. HOC are custom components which wrap another component within it. 
+    You can say that HOC are ‘pure’ components.
+    e.g. https://codeburst.io/higher-order-components-in-3-minutes-93173b2ebe52
+
+// React Redux ----------------------------------------------------------
+
+20) Flux vs Redux
+
+21) Redux
+
+22) List down the components of Redux.
+    Action – It’s an object that describes what happened.
+    Reducer –  It is a place to determine how the state will change.
+    Store – State/ Object tree of the entire application is saved in the Store.
+    View – Simply displays the data provided by the Store.
+
+// React Router ----------------------------------------------------------
+
+23) What is React Router?
+    React Router is a powerful routing library built on top of React, which helps in adding new screens and flows to the application.
+    - used for developing single page web applications.
+
+    <switch>
+        <route exact path=’/’ component={Home}/>
+        <route path=’/posts/:id’ component={Newpost}/>
+        <route path=’/posts’   component={Post}/>
+    </switch>
+    
+24) 
