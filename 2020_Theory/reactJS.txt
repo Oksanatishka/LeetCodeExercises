@@ -172,3 +172,134 @@ React is a front-end JavaScript library developed by Facebook in 2011.
     </switch>
     
 24) 
+
+----------------------------------------------------------
+----------------------------------------------------------
+Resource: 
+- https://medium.com/hackernoon/how-to-build-a-react-project-from-scratch-using-webpack-4-and-babel-56d4a26afd32
+- https://github.com/SukhjinderArora/react-boilerplate
+
+Ways to build a React project:
+1)  create-react-app https://github.com/facebook/create-react-app or 
+    react-slingshot https://github.com/coryhouse/react-slingshot
+2) from scratch using Webpack 4 and Babel:
+> mkdir react-boilerplate
+> cd react-boilerplate
+> mkdir -p src/components src/styles
+> npm init    // Initialize the Project:
+// > npm init -y    //  if you want to skip all the questions, add a -y flag.
+> npm install webpack webpack-cli --save-dev    // Installing Webpack:
+Webpack is a module bundler that lets us bundle our project files into a single file for production.
+We installed webpack-cli so that we can use webpack in the command line.
+> npm install react react-dom --save    // Installing React:
+> npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev     // Installing Babel:
+In order for React to work, we need to install Babel alongside with it. We need Babel to transpile ES6 and JSX to ES5.
+babel-core: Transforms ES6 code to ES5
+babel-loader: Webpack helper to transpile code, given the the preset.
+babel-preset-env: Preset which helps babel to convert ES6, ES7 and ES8 code to ES5.
+babel-preset-react: Preset which Transforms JSX to JavaScript.
+
+Create /src/index.js    // entry point to our app.
+Create /src/index.html 
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>React Boilerplate</title>
+    </head>
+
+    <body>
+        <div id="root">
+
+        </div>
+    </body>
+
+    </html>
+
+Create webpack.config.js    //  to define rules(the entry point and output directory of our app) for our loaders.
+    const path = require("path");
+
+    module.exports = {
+        // Webpack will bundle all of our JavaScript files into index-bundle.js file inside the /dist directory.
+        entry: "./src/index.js",
+        output: {
+            path: path.join(__dirname, "/dist"),
+            filename: "index_bundle.js"
+        },
+        // add some loaders, which will be responsible for loading and bundling the source files.
+        module: {
+            rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"  // babel-loader is used to load our JSX/JavaScript files 
+                },
+            },
+            {
+                // css-loader is used to load and bundle all of the CSS files into one file 
+                // style-loader will add all of the styles inside the style tag of the document.
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
+            ]
+        }
+    };
+> npm install css-loader style-loader --save-dev
+Create .babelrc file
+    {
+        "presets": ["@babel/preset-env", "@babel/preset-react"]
+    }
+This file will tell babel which presets to use for transpiling the code. Here we are using two presets:
+env: This preset is used to transpile the ES6/ES7/ES8 code to ES5.
+react: This preset is used to transpile JSX code to ES5.
+
+Add the following lines of code inside the script object of the package.json:
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+> npm start     // compile the project -> you will see /dist/index_bundle.js which will contain transpiled ES5 code from index.js file.
+Create an /src/components/App.js
+    import React, { Component } from "react";
+
+    import '../styles/App.css';
+
+    class App extends Component {
+        render() {
+            return (
+                <div>
+                    <h1>My React App!</h1>
+                </div>
+            );
+        }
+    }
+
+    export default App;
+Create /src/styles/App.css 
+    h1 {
+        color: #27aedb;
+        text-align: center;
+    }
+Modify the index.js:
+    import React from "react";
+    import ReactDOM from "react-dom";
+    import App from "./components/App.js";
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+
+> npm install html-webpack-plugin --save-dev    // Installing Html-webpack-plugin:  this plugin generates an HTML file, injects the script inside the HTML file and writes this file to dist/index.html.
+Configure this plugin inside the webpack.config.js (add under 'module'):
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "./src/index.html"
+        })
+    ]
+> npm start // run the project
+You will get output inside the /dist folder of project, Now open the index.html in a web browser, you will see the text “My React App!” inside of it.
+But this approach has a downside that you have to manually refresh the webpage, in order to see the changes you have made. To have webpack watch our changes and refresh webpage whenever any change is made to our components, we can install webpack-dev-server.
+> npm install webpack-dev-server --save-dev
+Change the package.json start script:
+    "start": "webpack-dev-server --mode development --open --hot"
+> npm start

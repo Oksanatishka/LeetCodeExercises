@@ -1,0 +1,143 @@
+Webpack
+
+https://github.com/TheLarkInn/webpack-workshop-2018
+https://github.com/tomsah/Webpack4-workshop
+
+Есть 2 способа вставить js в проект: 
+- через отдельный файл index.js и его подключение в index.html
+- Через <script> тег в index.html
+
+Проблема: scaling - что если у нас 10 миллионов строк кода и куча подключённых модулей. 
+Решение: grunt, gulp ....
+        Проблема: every time we make a change we need to rebuild the whole thing.
+        Проблема: it will include all unused code from modules
+        Решение: commonJs - export только нужных модулей, syntax called ‘require’
+                 Проблема: no browser support for commonJS
+                 Solution: requireJS, systemJS (loaders), browserify(static)
+                         Problem: no static async/ lazy loading (all bundles up front)
+                         Solution: ES modules (ESM)
+                                 Problem: the ESM for browser is very very very slow
+                                 Solution: webpack is a module bundler
+
+Today webpack is the most performant way to ship js. 
+
+Three ways to use webpack:
+1. webpack.config.js
+       
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: '[name].bundle.js',
+    path: 'dist/'
+  },
+};
+
+2. Webpack CLI
+
+> webpack <entry.js> <result.js> —colors —progress
+> webpack-dev-server —port=9000
+
+3. Node API (webpack wrapper)
+
+var webpack = require(‘webpack’)
+webpack({}, function(err, stats){})
+
+
+Scripts in package.json:
+“webpack”: “webpack”
+“dev”: “npm run webpack — —mode development —watch”
+“prod”: “npm run webpack — —mode production” // you’ll see dependency graph
+“dev:debug”: “npm run debug — —mode development”
+“prod:debug”: “npm run debug — —mode production”
+“debugthis”: “node —inspect —inspect-brk ./src/index.js”
+
+4 core concepts:
+1. entry - tells webpack what (files) to load for the browser;
+2. Output - tells webpack where and how to distribute bundles (compilations). Works with entry.
+3. Loaders and rules - tells webpack how to modify files before its added to dependency graph.
+4. Plugins - adds additional functionality to Compilations(optimized bundled modules), more powerful w/ more access to CompilerAPI, does everything else you’d ever want to in webpack.       objects (with an apply property), allow you to hook into the entire compilation lifecycle. Webpack has a variety of built in plugins. How to use plugins: require() plugin from node_modules into config, add new instance of plugin to plugins key in config object, provide additional info for arguments. 80% of webpack is made up of its own plugin system. 
+
+
+How to access env variables in config?
+- make change in package.json: change ‘—mode’ to ‘—env.mode’ in scripts.
+- In config add:
+            - ‘env’ argument -> change to {mode}
+            - mode: env.mode
+
+Adding webpack plugins:
+> npm install html-webpack-plugin —save
+Create ‘build-utils’ folder
+Add to config: 
+        const HtmlWebpackPlugin = require(“html-webpack-plugin”)
+        plugins:[new HtmlWebpackPlugin()]
+For interactive terminal progress add plugin called 
+        const webpack = require(‘webpack’)
+        plugins:[new HtmlWebpackPlugin(), new webpack.ProgressPlugin()]
+
+
+Setting up a local webpack development
+> npm install webpack-dev-server —dev
+Add script: “webpack-dev-server”: “webpack-dev-server”
+Open localhost 
+webpack-dev-server is made up of webpack-dev-middleware and express.
+> npm I webpack-merge
+
+
+https://github.com/TheLarkInn/webpack-workshop-2018/blob/feature/build-utils/webpack.config.js
+
+
+Using css with webpack
+Add code in /build-utils/webpack.development.js:
+
+module.exports = () => ({
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [“style-loader”, 'css-loader']
+      }
+    ]
+  }
+});
+Then Replace “style-loader” with MiniCssExtractPlugin.loader and add require for it, plugins property.
+
+> npm i mini-css-extract-plugin 
+Check doc https://github.com/webpack-contrib/mini-css-extract-plugin
+
+> npm i url-loader file-loader
+rules:[
+    {
+        test: /\.jpe?g$/,
+        use: [“url-loader”]
+    }
+]
+
+Limit file size option in url loader. Now change use: [“url-loader”] to:
+
+use: [{
+     loader: “url-loader”,
+     options: {
+         limit: 5000
+     }
+}]
+
+Implementing presets:
+https://github.com/TheLarkInn/webpack-workshop-2018/blob/feature/build-utils/build-utils/loadPresets.js
+> npm i ts-loader typescript@next
+
+
+> npm i webpack-bundle-analyzer 
+Add script:
+“prod:analyze”: “npm run prod — —env.presets analyze”
+
+/build-utils/presets/webpack.analyze.js
+
+> npm i compression-webpack-plugin 
+
+Lazy loading or code splitting:
+
+
+To find plugins: 
+https://github.com/webpack-contrib
+
+

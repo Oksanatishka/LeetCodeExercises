@@ -4,7 +4,12 @@ https://medium.com/dev-bits/a-perfect-guide-for-cracking-a-javascript-interview-
 2) https://dou.ua/lenta/articles/what-you-should-know-about-algorithms/?from=fp_top1m_also
 3) JS algorithms on Github https://github.com/trekhleb/javascript-algorithms
 4) https://medium.com/javascript-in-plain-english/50-javascript-interview-questions-4707d9286aac
-
+////////////////////////////////////////////////////////////////////////////////////////
+5)  JS Questions https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/javascript-questions.md
+    Answers: https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md#explain-event-delegation
+6)  Frontend Questions: https://performancejs.com/post/hde6d32/The-Best-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)
+    Answers: https://github.com/bcherny/frontend-interview-questions
+7) 
 //-----------------------------------------------------------------
 
 1) Repeat Functions https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
@@ -122,8 +127,9 @@ https://medium.com/dev-bits/a-perfect-guide-for-cracking-a-javascript-interview-
         - Factory Pattern
         - Mixin Pattern
 
-14) What is event delegation?
+14) What is event delegation? e.target
     DOM event delegation is used for responding to user events via a single parent rather than reach child node. With it, you can bind an event handler to a common parent element that will handle any event happening on one of its children.
+    e.target https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
 15) What data types there are in JavaScript?
     String
@@ -275,3 +281,20 @@ https://medium.com/dev-bits/a-perfect-guide-for-cracking-a-javascript-interview-
 32) What are Exports & Imports?
     Imports and exports help us to write modular JavaScript code. 
     Using Imports and exports we can split our code into multiple files. 
+
+-
+
+33) Polyfills.
+    if we’re going to use modern language features, a transpiler and a polyfill are necessary.
+    https://javascript.info/polyfills
+    https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923
+
+34) Grunt vs gulp vs Webpack
+    https://stackshare.io/stackups/grunt-vs-gulp-vs-webpack
+
+35) ajax
+
+36) fetch API
+    https://alligator.io/js/fetch-api/
+    https://alligator.io/react/axios-react/
+
