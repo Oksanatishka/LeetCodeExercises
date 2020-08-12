@@ -1,0 +1,137 @@
+Arrays and Strings
+    Two Sum
+    Longest Substring Without Repeating Characters
+    String to Integer (atoi)
+    Container With Most Water
+    Integer to Roman
+    Roman to Integer
+    3Sum
+    3Sum Closest
+    Implement strStr()
+    Rotate Image
+    Group Anagrams
+    Minimum Window Substring
+    Compare Version Numbers
+    Product of Array Except Self
+    Missing Number
+>    Integer to English Words
+>    First Unique Character in a String
+    Valid Parentheses
+    Most Common Word
+    Reorder Log Files
+    Trapping Rain Water
+
+Linked Lists
+    Add Two Numbers
+    Merge Two Sorted Lists
+    Reverse Nodes in k-Group
+    Copy List with Random Pointer
+    Reverse Linked List
+    Merge k Sorted Lists
+
+Trees and Graphs
+    Validate Binary Search Tree
+    Symmetric Tree
+    Binary Tree Level Order Traversal
+    Binary Tree Zigzag Level Order Traversal
+    Binary Tree Maximum Path Sum
+    Word Ladder II
+    Word Ladder
+>    Number of Islands
+    Course Schedule
+    Lowest Common Ancestor of a Binary Tree
+    Diameter of Binary Tree
+    Cut Off Trees for Golf Event
+    Flood Fill
+
+Recursion
+    Letter Combinations of a Phone Number
+    Generate Parentheses
+    Word Search
+    Word Search II
+
+Sorting and Searching
+    Median of Two Sorted Arrays
+    Search in Rotated Sorted Array
+    Merge Intervals
+    Two Sum II - Input array is sorted
+>    Kth Largest Element in an Array
+    Meeting Rooms II
+    Top K Frequent Elements
+    K Closest Points to Origin
+
+Dynamic Programming
+    Longest Palindromic Substring
+    Maximum Subarray
+>    Best Time to Buy and Sell Stock
+    Word Break
+    Coin Change
+
+Design
+>    LRU Cache
+    Min Stack
+    Find Median from Data Stream
+    Serialize and Deserialize Binary Tree
+    Design Tic-Tac-Toe
+    Design Search Autocomplete System
+    Maximum Frequency Stack
+
+Others
+    Reverse Integer
+    Second Highest Salary
+    Partition Labels
+>    Prison Cells After N Days
+
+//-----------------------------------------------------------------------------------------
+Top 50 Amazon Questions
+
+1	Two Sum    			
+200	Number of Islands    			
+2	Add Two Numbers    			
+937	Reorder Data in Log Files    			
+42	Trapping Rain Water    			
+146	LRU Cache    			
+5	Longest Palindromic Substring    			
+23	Merge k Sorted Lists    			
+15	3Sum    			
+21	Merge Two Sorted Lists    			
+1192	Critical Connections in a Network    			
+56	Merge Intervals    			
+273	Integer to English Words    			
+121	Best Time to Buy and Sell Stock    			
+692	Top K Frequent Words    			
+763	Partition Labels    			
+973	K Closest Points to Origin    			
+269	Alien Dictionary    			
+253	Meeting Rooms II    			
+139	Word Break    			
+380	Insert Delete GetRandom O(1)    			
+49	Group Anagrams    			
+297	Serialize and Deserialize Binary Tree    			
+138	Copy List with Random Pointer    			
+295	Find Median from Data Stream    			
+127	Word Ladder    			
+588	Design In-Memory File System    			
+227	Basic Calculator II    			
+348	Design Tic-Tac-Toe    			
+212	Word Search II    			
+460	LFU Cache    			
+994	Rotting Oranges    			
+819	Most Common Word    			
+472	Concatenated Words    			
+240	Search a 2D Matrix II    			
+1152	Analyze User Website Visit Pattern    			
+126	Word Ladder II    			
+863	All Nodes Distance K in Binary Tree    			
+465	Optimal Account Balancing    			
+957	Prison Cells After N Days    			
+815	Bus Routes    			
+909	Snakes and Ladders    			
+733	Flood Fill    			
+353	Design Snake Game    			
+694	Number of Distinct Islands    			
+1091	Shortest Path in Binary Matrix    			
+726	Number of Atoms    			
+1167	Minimum Cost to Connect Sticks    			
+1268	Search Suggestions System    			
+1429	First Unique Number    			

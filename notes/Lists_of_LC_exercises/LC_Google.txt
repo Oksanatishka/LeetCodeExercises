@@ -1,0 +1,289 @@
+Interview Process (Online Assessment Question)
+    Unique Email Addresses
+    Odd Even Jump
+    License Key Formatting
+    Fruit Into Baskets
+
+Arrays and Strings
+>   Longest Substring with At Most K Distinct Characters
+        Google likes to test your ability to think at large scale by asking variation of problems represented in a 
+        'data stream model'. For example, instead of giving you an integer array, you are given a stream of integers 
+        and all integers are too large to fit in memory. A great example of such problem, which can be represented 
+        in a data stream model, is the Longest Substring with At Most K Distinct Characters.
+    Longest Substring Without Repeating Characters
+    Container With Most Water
+    3Sum
+    Next Permutation
+    Multiply Strings
+    Rotate Image
+    Jump Game
+    Plus One
+    Minimum Window Substring
+    Read N Characters Given Read4 II - Call multiple times
+    Longest Substring with At Most Two Distinct Characters
+    Missing Ranges
+    Next Closest Time
+    Expressive Words
+    Find And Replace in String
+    Maximize Distance to Closest Person
+    Valid Parentheses
+    Merge k Sorted Lists
+    Trapping Rain Water
+    Kth Largest Element in an Array
+    Meeting Rooms II
+    Backspace String Compare
+    Minimum Cost to Hire K Workers
+    K Closest Points to Origin
+
+Linked Lists
+    Add Two Numbers
+    Remove Nth Node From End of List
+    Merge Two Sorted Lists
+>    Copy List with Random Pointer
+>    Linked List Cycle
+>    Intersection of Two Linked Lists,
+>    Merge k Sorted Lists (Make sure you understand how to analyze the time complexity! This is a common follow up question for this problem.)
+
+Trees and Graphs
+>    Graph Valid Tree (To understand the difference between trees and graphs)
+    Binary Tree Maximum Path Sum
+    Word Ladder
+    Number of Islands
+    Course Schedule II
+    Count Complete Tree Nodes
+    Longest Increasing Path in a Matrix
+    Decode String
+    Evaluate Division
+    Diameter of Binary Tree
+    Cracking the Safe
+    Robot Room Cleaner
+    Most Stones Removed with Same Row or Column
+    Flip Equivalent Binary Trees
+
+Recursion   // Recursion usually involves some kind of backtracking to enumerate all possibilities. Note that Recursion is a more general purpose algorithm. DFS is a specific form of backtracking related to searching tree DSs. Therefore we categorize those problems in "Trees and Graphs", even though they involve recursion.
+    Word Squares
+    Strobogrammatic Number II
+>    Word Search II (aka the Boggle solver) - uses a DS to optimize the search.
+    Android Unlock Patterns
+    Letter Combinations of a Phone Number
+    Generate Parentheses
+
+Sorting and Searching
+    Median of Two Sorted Arrays
+    Find First and Last Position of Element in Sorted Array
+    Merge Intervals
+    Insert Interval
+    Valid Anagram
+    Count of Smaller Numbers After Self
+    Peak Index in a Mountain Array
+
+Dynamic Programming
+    Longest Palindromic Substring
+    Maximum Subarray
+    Best Time to Buy and Sell Stock
+    Maximum Product Subarray
+    Coin Change
+>    Split Array Largest Sum
+
+Design
+    LRU Cache
+    Min Stack
+    Serialize and Deserialize Binary Tree
+    Logger Rate Limiter
+    Insert Delete GetRandom O(1)
+    Design Search Autocomplete System
+
+Others  (Bit Manipulation)
+    Reverse Integer
+    Candy
+    Isomorphic Strings
+    Strobogrammatic Number
+    Bulls and Cows
+    Range Sum Query 2D - Mutable
+    My Calendar II
+    Jewels and Stones
+    Swap Adjacent in LR String
+    Guess the Word
+    Minimum Area Rectangle
+
+
+//-----------------------------------------------------------------------------------------
+Sorted By Tag('Google') & Frequency:
+
+> Most Frequent
+
+388	Longest Absolute File Path    		                                    Medium	
+683	K Empty Slots    		                                                Hard	
+1	Two Sum    		                                                        Easy	
+929	Unique Email Addresses    		                                        Easy	
+681	Next Closest Time    		                                            Medium	
+904	Fruit Into Baskets    		                                            Medium	
+308	Range Sum Query 2D - Mutable    		                                Hard	
+482	License Key Formatting    		                                        Easy	
+1007	Minimum Domino Rotations For Equal Row    		                    Medium	
+843	Guess the Word    		                                                Hard	
+288	Unique Word Abbreviation    		                                    Medium	
+399	Evaluate Division    		                                            Medium	
+489	Robot Room Cleaner    		                                            Hard	
+975	Odd Even Jump    		                                                Hard	
+686	Repeated String Match    		                                        Easy	
+753	Cracking the Safe    		                                            Hard	
+271	Encode and Decode Strings    		                                    Medium	
+361	Bomb Enemy    		                                                    Medium	
+418	Sentence Screen Fitting    		                                        Medium	
+298	Binary Tree Longest Consecutive Sequence    		                    Medium	
+281	Zigzag Iterator    		                                                Medium	
+1057	Campus Bikes    		                                            Medium	
+393	UTF-8 Validation    		                                            Medium	
+163	Missing Ranges    		                                                Medium	
+159	Longest Substring with At Most Two Distinct Characters    		        Medium	
+844	Backspace String Compare    		                                    Easy	
+568	Maximum Vacation Days    		                                        Hard	
+340	Longest Substring with At Most K Distinct Characters    		        Hard	
+410	Split Array Largest Sum    		                                        Hard	
+642	Design Search Autocomplete System    		                            Hard	
+
+> Average Frequency
+
+222	Count Complete Tree Nodes    			
+947	Most Stones Removed with Same Row or Column    			
+857	Minimum Cost to Hire K Workers    			
+939	Minimum Area Rectangle    			
+248	Strobogrammatic Number III    			
+42	Trapping Rain Water    			
+218	The Skyline Problem    			
+56	Merge Intervals    			
+296	Best Meeting Point    			
+774	Minimize Max Distance to Gas Station    			
+200	Number of Islands    			
+394	Decode String    			
+346	Moving Average from Data Stream    			
+66	Plus One    			
+146	LRU Cache    			
+351	Android Unlock Patterns    			
+734	Sentence Similarity    			
+809	Expressive Words    			
+679	24 Game    			
+471	Encode String with Shortest Length    		
+149	Max Points on a Line    			
+737	Sentence Similarity II    			
+425	Word Squares    			
+228	Summary Ranges    			
+465	Optimal Account Balancing    			
+299	Bulls and Cows    			
+305	Number of Islands II    			
+1096	Brace Expansion II    			
+2	Add Two Numbers    			
+1055	Shortest Way to Form String    			
+253	Meeting Rooms II    			
+158	Read N Characters Given Read4 II - Call multiple times    			
+1088	Confusing Number II    			
+1110	Delete Nodes And Return Forest    			
+68	Text Justification    			
+833	Find And Replace in String    			
+4	Median of Two Sorted Arrays    			
+803	Bricks Falling When Hit    			
+1153	String Transforms Into Another String    			
+317	Shortest Distance from All Buildings    			
+289	Game of Life    			
+1231	Divide Chocolate    			
+315	Count of Smaller Numbers After Self    			
+750	Number Of Corner Rectangles    			
+247	Strobogrammatic Number II    			
+304	Range Sum Query 2D - Immutable    			
+359	Logger Rate Limiter    			
+246	Strobogrammatic Number    			
+562	Longest Line of Consecutive One in Matrix    			
+818	Race Car    			
+1168	Optimize Water Distribution in a Village    			
+280	Wiggle Sort    			
+777	Swap Adjacent in LR String    			
+10	Regular Expression Matching    			
+23	Merge k Sorted Lists    			
+417	Pacific Atlantic Water Flow    			
+524	Longest Word in Dictionary through Deleting    			
+360	Sort Transformed Array    			
+329	Longest Increasing Path in a Matrix    			
+284	Peeking Iterator    			
+1087	Brace Expansion    			
+85	Maximal Rectangle    			
+57	Insert Interval    			
+205	Isomorphic Strings    			
+727	Minimum Window Subsequence    			
+544	Output Contest Matches    			
+736	Parse Lisp Expression    			
+259	3Sum Smaller    			
+527	Word Abbreviation    			
+766	Toeplitz Matrix    			
+294	Flip Game II    			
+3	Longest Substring Without Repeating Characters    			
+846	Hand of Straights    			
+1146	Snapshot Array    			
+279	Perfect Squares    			
+731	My Calendar II    			
+295	Find Median from Data Stream    			
+157	Read N Characters Given Read4    			
+552	Student Attendance Record II    			
+1066	Campus Bikes II    			
+345	Reverse Vowels of a String    			
+76	Minimum Window Substring    			
+363	Max Sum of Rectangle No Larger Than K    			
+913	Cat and Mouse    			
+15	3Sum    			
+616	Add Bold Tag in String    			
+849	Maximize Distance to Closest Person    			
+221	Maximal Square    			
+54	Spiral Matrix    			
+17	Letter Combinations of a Phone Number    			
+276	Paint Fence    			
+558	Logical OR of Two Binary Grids Represented as Quad-Trees    			
+297	Serialize and Deserialize Binary Tree    			
+362	Design Hit Counter    			
+837	New 21 Game    			
+490	The Maze    			
+911	Online Election    			
+659	Split Array into Consecutive Subsequences    			
+528	Random Pick with Weight    			
+981	Time Based Key-Value Store    			
+715	Range Module    			
+687	Longest Univalue Path    			
+139	Word Break    			
+505	The Maze II    			
+224	Basic Calculator    			
+406	Queue Reconstruction by Height    			
+900	RLE Iterator    			
+380	Insert Delete GetRandom O(1)    			
+1170	Compare Strings by Frequency of the Smallest Character    			
+135	Candy    			
+166	Fraction to Recurring Decimal    			
+457	Circular Array Loop    			
+375	Guess Number Higher or Lower II    			
+850	Rectangle Area II    			
+20	Valid Parentheses    			
+403	Frog Jump    			
+269	Alien Dictionary    			
+723	Candy Crush    			
+318	Maximum Product of Word Lengths    			
+226	Invert Binary Tree    			
+128	Longest Consecutive Sequence    			
+722	Remove Comments    			
+31	Next Permutation    			
+320	Generalized Abbreviation    			
+5	Longest Palindromic Substring    			
+391	Perfect Rectangle    			
+353	Design Snake Game    			
+729	My Calendar I    			
+249	Group Shifted Strings    			
+341	Flatten Nested List Iterator    			
+72	Edit Distance    			
+332	Reconstruct Itinerary    			
+239	Sliding Window Maximum    			
+401	Binary Watch    			
+354	Russian Doll Envelopes    			
+835	Image Overlap    			
+124	Binary Tree Maximum Path Sum    			
+444	Sequence Reconstruction    			
+43	Multiply Strings    			
+400	Nth Digit    			
+285	Inorder Successor in BST    			
+963	Minimum Area Rectangle II    			

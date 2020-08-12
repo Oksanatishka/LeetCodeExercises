@@ -1,0 +1,61 @@
+Array and Strings
+    Two Sum
+    Longest Substring Without Repeating Characters
+    3Sum
+    Valid Anagram
+    Spiral Matrix
+    Merge Sorted Array
+    Pascal's Triangle
+    Integer to English Words
+    Move Zeroes
+>    First Unique Character in a String
+>    String Compression
+    Subarray Sum Equals K
+    Candy Crush
+
+Linked List
+>    Add Two Numbers
+    Merge Two Sorted Lists
+    Reverse Linked List II
+    Copy List with Random Pointer
+    Reverse Linked List
+    Add Two Numbers II
+
+Trees and Graphs
+>    Validate Binary Search Tree
+    Construct Binary Tree from Preorder and Inorder Traversal
+    Flatten Binary Tree to Linked List
+    Populating Next Right Pointers in Each Node
+>    Populating Next Right Pointers in Each Node II
+    Binary Tree Right Side View
+    Number of Islands
+    Kth Smallest Element in a BST
+    Alien Dictionary
+    Decode String
+    Flatten a Multilevel Doubly Linked List
+
+Heap, Queue, Stack
+    Valid Parentheses
+    Trapping Rain Water
+    Sliding Window Maximum
+>    Meeting Rooms II
+
+Sorting and Searching
+    Median of Two Sorted Arrays
+    Search in Rotated Sorted Array
+    Merge Intervals
+>    Sort Characters By Frequency
+>    Top K Frequent Words
+
+Dynamic Programming
+>    Longest Palindromic Substring
+    Maximum Subarray
+    Word Break
+
+Design
+>    LRU Cache
+    Moving Average from Data Stream
+
+Others
+    Reverse Integer
+    Word Search

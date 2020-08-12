@@ -1,0 +1,93 @@
+Principle of Recursion
+    You might wonder how we can implement a function that calls itself. 
+    The trick is that each time a recursive function calls itself, it reduces the given problem into subproblems. 
+    The recursion call continues until it reaches a point where the subproblem can be solved without further recursion.
+
+    A recursive function should have the following properties so that it does not result in an infinite loop:
+    - A simple base case (or cases) — a terminating scenario that does not use recursion to produce an answer.
+    - A set of rules, also known as recurrence relation that reduces all other cases towards the base case.
+
+Memoization
+    Memoization could greatly improve the time complexity with a bit of trade on space complexity, since it could avoid the expensive duplicate calculation.
+    To eliminate the duplicate calculation in the above case, as many of you would have figured out, one of the ideas would be to store the intermediate results in the cache so that we could reuse them later without re-calculation.
+    This idea is also known as memoization, which is a technique that is frequently used together with recursion.
+    // reduce compute time in exchange for some additional space.
+
+    Fibonacci number solution without memoization
+        public static int fibonacci(int n) {
+            if (n < 2) {
+                return n;
+            } else {
+                return fibonacci(n-1) + fibonacci(n-2);
+            }
+        }
+    Fibonacci number solution with memoization
+        public class Main {
+            HashMap<Integer, Integer> cache = new HashMap<Integer, Integer>();
+
+            private int fib(int N) {
+                if (cache.containsKey(N)) {
+                    return cache.get(N);
+                }
+                int result;
+                if (N < 2) {
+                    result = N;
+                } else {
+                    result = fib(N-1) + fib(N-2);
+                }
+                // keep the result in cache.
+                cache.put(N, result);
+                return result;
+            }
+        }
+
+The execution tree of a recursive function would form an 'n-ary tree', with n as the number of times recursion appears in the recurrence relation. 
+For instance, the execution of the Fibonacci function would form a binary tree.
+
+Tail recursion is a recursion where the recursive call is the final instruction in the recursion function. And there should be only one recursive call in the function.
+    
+    // not a tail recursion because it does some computation after the recursive call returned.
+    return ls[start] + helper_non_tail_recursion(start+1, ls);
+
+    // this is a tail recursion because the final instruction is the recursive call.
+    return helper_tail_recursion(start+1, ls, acc+ls[start]);
+
+Tail recursion could optimize the space complexity of the algorithm, by eliminating the stack overhead incurred by recursion
+
+Conclusion:
+    - When in doubt, write down the recurrence relationship.
+    - Whenever possible, apply memoization.
+    - When stack overflows, tail recursion might come to help. 
+
+//---------------------------------------------------------------------------------------
+Some paradigms that are often applied together with the recursion to solve some problems:
+    - Divide and Conquer
+    - Backtracking
+    - master theorem
+
+D&C
+    A divide-and-conquer algorithm works by recursively breaking the problem down into two or more subproblems of the same or related type, until these subproblems become simple enough to be solved directly.
+
+    Pseudocode template:
+        1. Divide. Divide the problem {S}S into a set of subproblems: {S1, S2, ... Sn} where n≥2, i.e. there are usually more than one subproblem.
+        2. Conquer. Solve each subproblem recursively. 
+        3. Combine. Combine the results of each subproblem.
+
+Master Theorem, 
+    also known as Master Method, provides asymptotic analysis (i.e. the time complexity) for many of the recursion algorithms that follow the pattern of divide-and-conquer. 
+    Note that Master Theorem is an advanced technique to estimate the time complexity of certain recursive algorithms. It does not apply to all recursion algorithms.
+
+
+Unfold Recursion    - convert a recursion algorithm to non-recursion one
+    To convert a recursion approach to an iteration one, perform the following two steps:
+    - We use a stack or queue data structure within the function, to replace the role of the system call stack. At each occurrence of recursion, we simply push the parameters as a new element into the data structure that we created, instead of invoking a recursion.
+    - In addition, we create a loop over the data structure that we created before. The chain invocation of recursion would then be replaced with the iteration within the loop.
+
+Divide and Conquer VS. Backtracking 
+    - D&C problem has a sole solution, while the backtracking problem has unknown number of solutions.
+        For example, 
+            - when we apply the merge sort algorithm to sort a list, we obtain a single sorted list, 
+            - while there are many solutions to place the queens for the N-queen problem.
+    - Each step in the D&C problem is indispensable to build the final solution, while many steps in backtracking problem might not be useful to build the solution, but serve as atttempts to search for the potential solutions.
+    - When building the solution in the divide-and-conquer algorithm, we have a clear and predefined path, though there might be several different manners to build the path. While in the backtracking problems, one does not know in advance the exact path to the solution.
+    

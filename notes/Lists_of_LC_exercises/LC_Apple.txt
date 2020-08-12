@@ -1,0 +1,77 @@
+Arrays and Strings
+>    Two Sum
+    Longest Substring Without Repeating Characters
+    String to Integer (atoi)
+    Integer to Roman
+    Roman to Integer
+>    3Sum
+    3Sum Closest
+    4Sum
+    Group Anagrams
+    Spiral Matrix
+    Minimum Window Substring
+    Valid Palindrome
+    Majority Element II
+    Product of Array Except Self
+    Missing Number
+    First Unique Character in a String
+    Subarray Sum Equals K
+    Squares of a Sorted Array
+    Valid Parentheses
+    Trapping Rain Water
+    Sparse Matrix Multiplication
+
+Linked Lists
+    Add Two Numbers
+    Merge Two Sorted Lists
+>    Reverse Linked List
+
+Trees and Graphs
+    Same Tree
+    Maximum Depth of Binary Tree
+>    Clone Graph
+    Number of Islands
+    Lowest Common Ancestor of a Binary Tree
+    Longest Increasing Path in a Matrix
+    Diameter of Binary Tree
+
+Recursion
+    Letter Combinations of a Phone Number
+    Generate Parentheses
+    Combination Sum
+    Permutations
+    Subsets
+    Word Search
+
+Sorting and Searching
+    Median of Two Sorted Arrays
+    Search in Rotated Sorted Array
+    Merge Intervals
+    Sort Colors
+    Valid Anagram
+>    Intersection of Two Arrays
+    Intersection of Two Arrays II
+    Top K Frequent Words
+    K Closest Points to Origin
+
+Dynamic Programming
+    Longest Palindromic Substring
+    Regular Expression Matching
+>    Maximum Subarray
+>    Best Time to Buy and Sell Stock
+    Word Break
+
+Design
+>    LRU Cache
+    Min Stack
+    Flatten Nested List Iterator
+    Insert Delete GetRandom O(1)
+
+Others  (Math problems & database question)
+    Reverse Integer
+    Valid Sudoku
+>    Combine Two Tables
+    Rank Scores
+    Happy Number
+    Fizz Buzz
+    Jewels and Stones

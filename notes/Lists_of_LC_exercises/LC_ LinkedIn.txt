@@ -1,0 +1,71 @@
+Array and Strings
+>    Two Sum
+    Valid Number
+    Text Justification
+    Minimum Window Substring
+    Shortest Word Distance
+    Integer to English Words
+    Find the Celebrity
+    Can Place Flowers
+    Isomorphic Strings
+
+Trees and Graphs
+    Binary Tree Level Order Traversal
+    Maximum Depth of Binary Tree
+    Word Ladder
+    Binary Tree Upside Down
+    Number of Islands
+    Lowest Common Ancestor of a Binary Search Tree
+    Lowest Common Ancestor of a Binary Tree
+    Closest Binary Search Tree Value II
+    Find Leaves of Binary Tree
+    Second Minimum Node In a Binary Tree
+
+Recursion and Backtracking
+    Combination Sum
+    Permutations
+    Permutations II
+>    Factor Combinations
+    Nested List Weight Sum
+    Nested List Weight Sum II
+
+Heap, Queue, Stack
+    Valid Parentheses
+    Evaluate Reverse Polish Notation
+    Kth Largest Element in an Array
+    Exclusive Time of Functions
+
+Sorting and Searching   // These problems typically require you to sort it in order and apply some kind of linear search or binary search technique.
+    Search in Rotated Sorted Array
+    Find First and Last Position of Element in Sorted Array
+    Pow(x, n)
+    Merge Intervals
+    Sqrt(x)
+    Random Pick with Weight
+
+Dynamic Programming
+>    Maximum Subarray
+    Edit Distance
+    Maximum Product Subarray
+    Paint House
+    Paint House II
+    Partition to K Equal Sum Subsets
+
+Design
+>    Two Sum III - Data structure design
+    Shortest Word Distance II
+    Serialize and Deserialize Binary Tree
+    Flatten Nested List Iterator
+>    Insert Delete GetRandom O(1)
+    All O`one Data Structure
+    Max Stack
+    Design HashMap
+
+------------------------------------------------------------------------------
+Top LinkedIn Questions
+
+380	Insert Delete GetRandom O(1)    		
+297	Serialize and Deserialize Binary Tree    		
+364	Nested List Weight Sum II    		
+716	Max Stack    		
+339	Nested List Weight Sum    		
